@@ -1,0 +1,21 @@
+2008-12-18  Darren Ferguson <darren.ferguson@openband.net>
+        * Changed module so it can also receive its configuration via the host_config stanza
+        * Updated the conf example to show how it can be configured now also
+
+2008-09-09  Darren Ferguson <darren.ferguson@openband.net>
+        * Changed configuration for servers so it is a list of lists [["dev.example.com", "example.com"]]
+        * where the first one is the domain of the ejabberd server and the 2nd is the domain the xmlrpc request
+        * will be sent too, this was added due to systems that do not send the request back to the same host
+
+2008-06-30  Darren Ferguson <darren.ferguson@openband.net>
+        * Added @HOST@ capability for sending the xmlrpc call back to server
+
+2008-04-25  Darren Ferguson <darren.ferguson@openband.net>
+        * Made module so it uses one thread per vhost instead of one for the whole system
+
+2008-04-17  Darren Ferguson <darren.ferguson@openband.net>
+	* Changed presence redirect to xmlrpc from xmpp
+
+2008-04-04  Darren Ferguson <darren.ferguson@openband.net>
+	* Initial release of the module mod_presence_redirect
+
